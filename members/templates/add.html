@@ -1,13 +1,36 @@
-<h1>Add member</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Member</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container add_member">
+        <div class="add_member_heading">
+            <h1>Add Member</h1>
+        </div>
 
-<form action="addrecord/" method="post">
-{% csrf_token %}
-Supplier or Receiver
-<input name="first">
-<br><br>
-Email Id<br>
-<input name="last">
-<br><br>
-<input type="submit" value="Submit">
-</form>
+       <div class="add_member_content">
+        <form action="addrecord/" method="post">
+            {% csrf_token %}
+            
+            <label for="Email">Supplier / Receiver :</label>
+            <div class="input_field">
+                <input type="text" name="first" placeholder="Name">
+            </div>
+
+            <label for="Email">Email :</label>
+            <div class="input_field">
+                <input type="email" name="first" placeholder="Email" id="Email">
+            </div>
+
+            <input type="submit" value="Submit">
+            </form>
+       </div>
+    </div>
+</body>
+</html>
 
