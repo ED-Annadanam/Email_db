@@ -1,14 +1,41 @@
-<h1>Members</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Members</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container members_info">
 
-<table border="1">
-{% for x in mymembers %}
-<tr>
-<td>{{ x.id }}</td>
-<td>{{ x.supplier_or_receiver }}</td>
-<td>{{ x.email_id }}</td>
-</tr>
-{% endfor %}
-</table>
-<p>
-<a href="add/">Add member</a>
-</p>
+        <div class="member_heading">
+            <h1>Members</h1>
+        </div>
+
+        <div class="members_content">
+            <table border="0" cellspacing="0">
+                {% for x in mymembers %}
+                <tr>
+                    <th>ID</th>
+                    <th>Supplier</th>
+                    <th>Email</th>
+                </tr>
+                <tr>
+                    <td>{{ x.id }}</td>
+                    <td>{{ x.supplier_or_receiver }}</td>
+                    <td>{{ x.email_id }}</td>
+                </tr>
+                {% endfor %}
+            </table>
+    
+            <div class="add_btn">
+                <a href="add/">Add member</a>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
+
