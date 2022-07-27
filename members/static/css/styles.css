@@ -1,0 +1,113 @@
+* 
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: 0;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    line-height: .8;
+    padding: 0;
+    margin: 0;
+}
+
+/* ======= CSS Reset ends here ======== */
+
+.container {
+    padding: 0 25px;
+}
+
+/* ======= Member info page style =======*/
+
+
+.members_info .member_heading {
+    padding: 25px 0 20px;
+}
+.members_info .member_heading h1{
+    font-size: 40px;
+}
+
+.members_info .members_content {
+    padding-top: 20px;
+}
+.members_info .members_content table{
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+.members_info .members_content table th{
+    padding: 20px;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    font-size: 24px;
+}
+.members_info .members_content table td{
+    padding: 20px;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    font-size: 24px;
+}
+
+.members_info .members_content .add_btn a {
+    background-color: #225378;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin-top: 50px;
+    font-size: 20px;
+    transition: all linear 0.5s;
+}
+.members_info .members_content .add_btn a:hover {
+    background-color: #1D6679;
+    color: #fff;
+}
+
+
+/* ======= Add member page style =======*/
+
+.add_member .add_member_heading {
+    padding: 25px 0 20px;
+}
+.add_member .add_member_heading h1{
+    font-size: 40px;
+}
+.add_member .add_member_content label{
+    font-size: 30px;
+}
+
+.add_member .add_member_content .input_field input {
+    padding: 10px 20px;
+    outline: 0;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    border-radius: 15px;
+    margin: 15px 0 30px;
+}
+.add_member .add_member_content .input_field input[placeholder] {
+    font-size: 24px;
+}
+
+.add_member .add_member_content .input_field input[type=button],
+    input[type=submit] {
+        background-color: #225378;
+        border: none;
+        border-radius: 10px;
+        color: #fff;
+        cursor: pointer;
+        font-size: 20px;
+        padding: 15px 30px;
+        margin: 4px 2px;
+        transition: all linear 0.5s;
+        text-decoration: none;
+}
+.add_member .add_member_content .input_field input[type=button],
+      input[type=submit]:hover {
+        background-color: #1D6679;
+        color: #fff;
+} 
