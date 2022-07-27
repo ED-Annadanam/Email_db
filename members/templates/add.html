@@ -13,7 +13,14 @@
             <h1>Add Member</h1>
         </div>
 
-       <div class="input_field">
+       
+       <div class="add_member_content">
+        <form action="addrecord/" method="post">
+            {% csrf_token %}
+
+            <label for="Email">Supplier / Receiver :</label>
+
+        <div class="input_field">
                <input name="first">
 
             </div>
