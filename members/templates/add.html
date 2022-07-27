@@ -13,21 +13,26 @@
             <h1>Add Member</h1>
         </div>
 
+       
        <div class="add_member_content">
         <form action="addrecord/" method="post">
             {% csrf_token %}
-            
+
             <label for="Email">Supplier / Receiver :</label>
-            <div class="input_field">
-                <input type="text" name="first" placeholder="Name">
+
+        <div class="input_field">
+               <input name="first">
+
             </div>
 
             <label for="Email">Email :</label>
             <div class="input_field">
-                <input type="email" name="first" placeholder="Email" id="Email">
+                <input name="last">
+
             </div>
 
             <input type="submit" value="Submit">
+
             </form>
        </div>
     </div>
