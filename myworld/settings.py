@@ -23,7 +23,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 #SECRET_KEY = 'django-insecure-on^d7((@at&ki&ye6k!5!!p$d28t@b!m&!0r-gimc7@4g^z(cv'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = []
 
@@ -127,3 +127,6 @@ django_heroku.settings(locals())
 CSRF_TRUSTED_ORIGINS = [
     'https://email-storage.herokuapp.com'
 ]
+STATICFILES_DIRS = [
+    BASE_DIR / "static",
+    ]
